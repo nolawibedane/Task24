@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Manchester City</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+    <script src="Javascript/saved.js"></script>
+    <link rel="stylesheet" href="SCSS/index.css">
+    <style>
+        body {
+            background-image: url("BG1.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            // Hide/show text1 on button click
+            $("#toggleText1").click(function () {
+                $(".text1").toggle();
+            });
+
+            // Hide/show text2 on button click
+            $("#toggleText2").click(function () {
+                $(".text2").toggle();
+            });
+
+            // Hide/show comments on button click
+            $("#toggleComments").click(function () {
+                $("#commentForm").toggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1 class="heading">Manchester City, Set to Win it <i>ALL</i>.</h1>
+    <img src="Images/ManchesterCityBadge.jpg" class="ManchesterBadge">
+    <button onclick="saveForLater(this)">Save for Later</button>
+    <p class="text1">Manchester City have had a <b>phenomenal performance</b> this season, albeit a rocky start to the
+        <i>Premier League.</i> Most fans have claimed it was just "new season growing pains." Now that the team has been
+        playing better than they ever have and the addition of the "Star Striker" <a
+            href="https://en.wikipedia.org/wiki/Erling_Haaland" target="_blank">Erling Halaand</a> it seems like manager
+        <a href="https://en.wikipedia.org/wiki/Pep_Guardiola" target="_blank">Pep Guardiola</a> has set his eyes on the
+        <i>Champions League</i> & <i>FA Cup</i>
+        <button onclick="saveForLater(this)">Save for Later</button>
+    </p>
+    <button id="toggleText1">Toggle Text 1</button>
+
+
+    <br><br><br><br>
+    <h1 class="heading">Is This The Year Manchester City Win The Treble?</h1>
+    <div class="row">
+        <div class="column">
+            <p class="text2">The Treble is considered one of the greatest compilation of accomplishments in English
+                football. The Treble consists of the <i>Premier League, FA Cup & the renowned Champions League</i>.
+                Winning anyone one of these competitions is no easy feat let alone winning all three of them in a single
+                season. The first and last team to ever win all three of these competitions was the 1998/99 squad,
+                <b>Manchester United</b> led by one of the greatest football managers of all time <a
+                    href="https://en.wikipedia.org/wiki/Alex_Ferguson" target="_blank">Alex Ferguson</a>. But this blog
+                isn't about them, rather we're here to talk about Manchester City's chances of taking it all home.
+                Manchester City are no strangers to winning, ever since the day Pep Guardiola joined the team as manager
+                in 2016 all the team has done is win. 4 Premier League titles and 1 FA Cup title. Yet one title keeps
+                eluding the highly regarded team and that is the <b>Champions League</b>. We'll be discussing the past
+                misteps of the team and how the future may look bright all on this blog<br><br>
+                <a href="reasonsLost.html">Past Misteps</a><br><br>
+                <a href="theFuture.html">The Bright Future</a><br><br>
+                <b>What team would you like us to do a blog on next?</b><br>
+                <input type="radio" id="ManU" name="NextTeam" value="Manchester United">
+                <label for="ManU">Manchester United</label><br>
+                <input type="radio" id="TottenHam" name="NextTeam" value="TottenHam Hotspurs">
+                <label for="TottenHam">TottenHam Hotspurs</label><br>
+                <input type="radio" id="Brighton" name="NextTeam" value="Brighton & Hove Albion F.C.">
+                <label for="Brighton">Brighton & Hove Albion F.C.</label><br>
+            </p>
+        </div>
+        <div class="column">
+            <img src="Images/ManchesterCittyFlag.jpg" class="ManCityFlag">
+            <button onclick="saveForLater(this)">Save for Later</button>
+        </div>
+    </div>
+
+    <br>
+    <button id="toggleText2">Toggle Text 2</button>
+    <br>
+    <button id="toggleComments">Toggle Comments</button>
+    <h2>Leave a Comment</h2>
+    <form id="commentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit" onclick="saveComment()">Submit Comment</button>
+    </form>
+</body>
+
+</html>

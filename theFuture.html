@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Manchester City - The Bright Future
+    </title>
+    <script src="Javascript/saved.js"></script>
+    <link rel="stylesheet" href="SCSS/index3.css">
+    <style>
+        body {
+            background-image: url("BG1.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">
+        Why Is This <b>THE YEAR</b>?
+    </h1>
+    <h1 class="text1">
+        <ul>
+            <li>Overall Perfomance of The Team</li>
+            <li>Pep's Concentration</li>
+            <li>A New Striker</li>
+        </ul>
+    </h1>
+    <img src="Images/ManCityNewTeam.jpg" class="ManCityNewTeam"> <br><br><br>
+    <button onclick="saveForLater(this)">Save for Later</button>
+    <div class="row">
+        <div class="column">
+            <p class="text2">
+                The team has been playing some of the best football it ever has been. Besting some of the best teams in
+                dominant
+                fashion and never dropping a game to 2nd place team in the <a
+                    href="https://www.premierleague.com/tables" target="_blank">Premier League</a>, <a
+                    href="https://en.wikipedia.org/wiki/Arsenal_F.C." target="_blank">Arsenal</a>. Many have seem to
+                attribute this to Pep Guardiola's reignited passion for the
+                team with never before seen tactics being sprung into play and alot more envolvement into the team. But
+                obviously we can not talk about Manchester City's future and current success without bringing up the
+                blossoming
+                Star Erling Halaand. A player who at his first year playing for the Premier League has already broken
+                the
+                record
+                for most goals in all competitions not to mention he is only 22 years old, he makes it look all too
+                easy.
+                Ever
+                since Manchester City said bye to their franchise player <a
+                    href="https://en.wikipedia.org/wiki/Sergio_Ag%C3%BCero">Kun Aguero</a> there has been a wide gap in
+                the
+                Striker position and Erling Halaand makes sure he feels that gap and more. These are all the reasons I
+                believe
+                that this year is the year Manchester City finally grab the Champions League trophy that they've been
+                missing.
+                <button onclick="saveForLater(this)">Save for Later</button>
+            </p>
+        </div>
+        <div class="column">
+            <img src="Images/ChampionsLeagueTrophy.png" class="Trophy">
+            <button onclick="saveForLater(this)">Save for Later</button>
+        </div>
+        <div class="column">
+            <img src="Images/ErlingHalaand.png" class="Halaand">
+            <button onclick="saveForLater(this)">Save for Later</button>
+        </div>
+    </div>
+
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit" onclick="submitContactForm()">Send Message</button>
+    </form>
+
+</body>
+
+</html>

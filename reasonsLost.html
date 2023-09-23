@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+    <title>
+        Manchester City - Past Misteps
+    </title>
+    <script src="Javascript/saved.js"></script>
+    <link rel="stylesheet" href="SCSS/index2.css">
+    <style>
+        body {
+            background-image: url("BG1.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="heading">
+        Three Reasons That Have Stopped Manchester City From Winning The Champions League
+    </h1>
+
+    <body>
+        <div id="row">
+            <div class="column1">
+                <h1 class="heading">Pep Guardiola Complicates Tactics</h1>
+                <img src="Images/PepGuardiola.jpg" width="300px" class="dropdown-image">
+                <button onclick="saveForLater(this)">Save for Later</button>
+                <p class="text1">
+                    One of Peps largest double edge swords. An ability that allows him to see what most are blind to on
+                    the pitch, an ability which that allows him and the players to setup up intricate plays. This is
+                    what makes Pep Guardiola a genius. <b>But...</b> This can sometimes be a bad thing. The more
+                    intricate the play the harder it is to excute, all 11 players need to by in sync during the gruesome
+                    90 minute match. Which can sometimes be too much to ask for. When his plays fall flat and all
+                    players aren't in sync they're mistakes are noticeable leading skilled enough teams to take over.
+                    <button onclick="saveForLater(this)">Save for Later</button>
+                <form id="likeForm">
+                    <button type="button" onclick="likeArticle1()">Like</button>
+                    <span id="likeCount">0</span> Likes
+                </form>
+                </script>
+                </p>
+            </div>
+
+            <div class="column2">
+                <h1 class="heading">The African Curse</h1>
+                <img src="Images/YayaToure.jpg" width="300px" class="dropdown-image">
+                <button onclick="saveForLater(this)">Save for Later</button>
+                <p class="text2">
+                    The African Curse, one of the biggest thorns to Manchester City's side for 5+ years.Now this one
+                    might be more of a joke but the issue it stemmed from is very serious. Famous footballer player <a
+                        href="https://en.wikipedia.org/wiki/Yaya_Tour%C3%A9" target="_blank">Yaya Toure</a> had come out
+                    agaignst his
+                    former club Manchester City back in 2016 after he had left the team,stating "He was cruel with me.
+                    Do you really think he could've been like that with Iniesta? It got to the point I asked myself if
+                    it was because of my colour. I'm not the first, other Barça players asked the question too." These
+                    were comments he made about Manager <a href="https://en.wikipedia.org/wiki/Pep_Guardiola"
+                        target="_blank">Pep Guardiola</a>. shortly after these comments were released to the press Yaya
+                    Toure's Manager had stated that years of miss fortune will be bestowed upong Guardiola for his
+                    mistreatment againgst the African players on Manchester City. Thus creating the infamous "African
+                    Curse".
+                    <button onclick="saveForLater(this)">Save for Later</button>
+                <form id="likeForm">
+                    <button type="button" onclick="likeArticle2()">Like</button>
+                    <span id="likeCount2">0</span> Likes
+                </form>
+                </p>
+
+            </div>
+
+            <div class="column3">
+                <h1 class="heading">Home Grown Talent</h1>
+                <img src="Images/ManCityTeam.jpg" width="300px" class="dropdown-image">
+                <button onclick="saveForLater(this)">Save for Later</button>
+                <p class="text3">
+                    Manchester City have been applauded for how they make their teams, rather then buying a roster of
+                    already famous and developed player and forming a "Super Team" like other well know teams, they
+                    rather get academy players or players from lesser know teams. This way they make sure that players
+                    get into the team through determination and sheer knowledge and are then molded to fit the
+                    Manchester City playstyle instead of already getting players who a rigged and hard to adapt. This
+                    can be a downside though cause players may never really truly blossom or might take years to show
+                    their full potential. <a href="https://en.wikipedia.org/wiki/Jack_Grealish" target="_blank">Jack
+                        Grealish</a> is a great example of this.
+                    <button onclick="saveForLater(this)">Save for Later</button>
+                <form id="likeForm">
+                    <button type="button" onclick="likeArticle3()">Like</button>
+                    <span id="likeCount3">0</span> Likes
+                </form>
+                </p>
+    </body>
+    <script>
+        $(document).ready(function () {
+            $(".dropdown-image").click(function () {
+                $(this).siblings("p").slideToggle();
+            });
+        });
+        let likeCount = 0;
+        function likeArticle1() {
+            likeCount++;
+            document.getElementById("likeCount").innerText = likeCount;
+        }
+        let likeCount2 = 0;
+        function likeArticle2() {
+            likeCount2++;
+            document.getElementById("likeCount2").innerText = likeCount2;
+        }
+        let likeCount3 = 0;
+        function likeArticle3() {
+            likeCount3++;
+            document.getElementById("likeCount3").innerText = likeCount3;
+        }
+    </script>
+
+</html>

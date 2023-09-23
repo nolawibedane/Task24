@@ -1,0 +1,38 @@
+.heading {
+    color: white;
+    background-color: black;
+    font-size: 50px;
+    font-family: sans-serif;
+    text-align: center;
+    border: 10px solid black;
+}
+
+.list {
+    font-size: 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#row {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.column1,
+.column2,
+.column3 {
+    border: 10px solid black;
+    width: 300px;
+    float: left;
+    margin: 25px;
+}
+
+.text1,
+.text2,
+.text3 {
+    font-family: Arial;
+    font-size: 30px;
+}
